@@ -8,14 +8,14 @@
 # C. Dearden (CEMAC), 20/08/18
 #
 # Invoke as follows:
-# . ~earcdea/WRFv4/WRFv4_setup_env.sh
+# . ~earwrfa/WRFv4/WRFv4_setup_env.sh
 # NB - the '.' is essential to ensure that changes to the 
 # environment take effect within the current shell session
 # 
 #
 #
 # Make use of private module to load the WRF environment
-module use ~earcdea/privatemodules
+module use ~earwrfa/privatemodules
 module load WRFv4
 module list
 
@@ -30,10 +30,10 @@ if [[ ! -e $TESTDIR ]]; then
     mkdir -p $TESTDIR
     cd $TESTDIR
     echo "Extracting test environment for Katrina case study..."
-    tar -zxvf /home/home01/earcdea/WRFv4/WRFv4_Katrina_test_env.tar.gz >/dev/null
+    tar -zxvf /home/home02/earwrfa/WRFv4/WRFv4_Katrina_test_env.tar.gz >/dev/null
     echo "Done."
     echo "Extracting test environment for dummyfc case study..."
-    tar -zxvf /home/home01/earcdea/WRFv4/WRFv4_dummyfc_test_env.tar.gz >/dev/null
+    tar -zxvf /home/home02/earwrfa/WRFv4/WRFv4_dummyfc_test_env.tar.gz >/dev/null
     echo "Done."
 else
     echo "$TESTDIR already exists, nothing to do"
