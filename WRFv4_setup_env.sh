@@ -30,10 +30,10 @@ if [[ ! -e $TESTDIR ]]; then
     mkdir -p $TESTDIR
     cd $TESTDIR
     echo "Extracting test environment for Katrina case study..."
-    tar -zxvf /home/home02/earwrfa/WRFv4/WRFv4_Katrina_test_env.tar.gz >/dev/null
+    tar -zxvf /home/home02/earwrf/WRFv4/WRFv4_Katrina_test_env.tar.gz >/dev/null
     echo "Done."
     echo "Extracting test environment for dummyfc case study..."
-    tar -zxvf /home/home02/earwrfa/WRFv4/WRFv4_dummyfc_test_env.tar.gz >/dev/null
+    tar -zxvf /home/home02/earwrf/WRFv4/WRFv4_dummyfc_test_env.tar.gz >/dev/null
     echo "Done."
 else
     echo "$TESTDIR already exists, nothing to do"
