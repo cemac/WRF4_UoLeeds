@@ -5,9 +5,11 @@ following [cds api intructions](https://cds.climate.copernicus.eu/api-how-to)
 ## Requirements:
 
 * CDS account
-* Eccodes and cdsapi  **Use yml file ** *OR*
-  * conda install -c conda-forge cdsapi
-  * conda install -c conda-forge eccodes
+* Eccodes and cdsapi
+  * use CEMAC moduels `module load wrfconda` OR
+  * for personal anaconda:
+    * conda install -c conda-forge cdsapi
+    * conda install -c conda-forge eccodes
 
 ## Pipeline
 
