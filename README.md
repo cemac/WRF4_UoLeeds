@@ -12,13 +12,17 @@
 
 ### Guidance on using WRF4 on the UoLeeds ARC3 & ARC4 system
 
-This code repository contains copies of three files that are used to invoke an environment on the University of Leeds HPC for running WRFv4 from a pre-built installation that resides under the `earwrfa` account. This installation is designed primarily for use as part of an undergraduate teaching module in Practical Weather Forecasting.
+This code repository contains ther following:
 
-The files are: 
+* Information on using prebuilt WRF executables on the University of Leeeds HPC system. 
+* Useful scripts such as GFS and ERA5 met data retrieval and example altered TBL files
+* Copies of 2 files that are used to invoke an environment on the University of Leeds HPC for setting up an Evironment for an undergraduate teaching module in Practical Weather Forecasting.
 
-```WRFv4_setup_env.sh``` - used to invoke the cemac module and set up some test environments for running the model;
+	The files are: 
 
-```WRF_tidyup.sh``` - shell script used to clean up old WRF output files before performing a new case study
+	```WRFv4_setup_env.sh``` - used to invoke the cemac module and set up some test environments for running the model;
+
+	```WRF_tidyup.sh``` - shell script used to clean up old WRF output files before performing a new case study
 
 More details on how to invoke the WRF environment and run it on ARC3 are available [here](https://github.com/cemac-tech/WRF4_UoLeeds/wiki/WRFv4-on-ARC3:-User-documentation)
 
