@@ -15,8 +15,17 @@
 #
 #
 # Make use of private module to load the WRF environment
-module use ~earwrfa/privatemodules
-module load WRFv4
+if [[ $- =~ "i" ]]; then
+    if [ -r /nobackup/cemac/cemac.sh ] ; then
+	. /nobackup/cemac/cemac.sh
+    fi
+fi
+
+module load WPS
+module load WRF
+module load nco
+module load ncl
+module load ncview
 module list
 
 # Change directory to local nobackup (/nobackup/$USER) and 
