@@ -8,19 +8,15 @@
 # WRF4_UoLeeds
 
  [![GitHub release](https://img.shields.io/github/release/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds/releases) [![GitHub top language](https://img.shields.io/github/languages/top/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds) [![GitHub issues](https://img.shields.io/github/issues/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds/commits/master) [![GitHub All Releases](https://img.shields.io/github/downloads/cemac/WRF4_UoLeeds/total.svg)](https://github.com/cemac/WRF4_UoLeeds/releases) ![GitHub](https://img.shields.io/github/license/cemac/WRF4_UoLeeds.svg)
-[![HitCount](http://hits.dwyl.io/{cemac}/{WRF4_UoLeeds}.svg)](http://hits.dwyl.io/{cemac}/{WRF4_UoLeeds})
 
 
-
-### Guidance on using WRF4 on the UoLeeds ARC3 system
+### Guidance on using WRF4 on the UoLeeds ARC3 & ARC4 system
 
 This code repository contains copies of three files that are used to invoke an environment on the University of Leeds HPC for running WRFv4 from a pre-built installation that resides under the `earwrfa` account. This installation is designed primarily for use as part of an undergraduate teaching module in Practical Weather Forecasting.
 
 The files are: 
 
-```WRFv4``` - private modulefile that sets the paths to required libraries and dependencies;
-
-```WRFv4_setup_env.sh``` - used to invoke the private module and set up some test environments for running the model;
+```WRFv4_setup_env.sh``` - used to invoke the cemac module and set up some test environments for running the model;
 
 ```WRF_tidyup.sh``` - shell script used to clean up old WRF output files before performing a new case study
 
@@ -28,7 +24,37 @@ More details on how to invoke the WRF environment and run it on ARC3 are availab
 
 Full details of the compilation method are available [here](https://github.com/cemac-tech/WRF4_UoLeeds/wiki/Compiling-WRFv4.0-on-ARC3). These notes may also be used as a guide by University of Leeds researchers who wish to build their own local instance of WRFv4 for model development work. 
 
-C. Dearden, CEMAC
+## CEMAC WRF modules
+
+To use available cemac modules please run:
+
+`. /nobackup/cemac/cemac.sh`
+
+or add the following lines to your `.bashrc`
+
+```bash
+if [[ $- =~ "i" ]]; then
+    if [ -r /nobackup/cemac/cemac.sh ] ; then
+	. /nobackup/cemac/cemac.sh
+    fi
+fi
+
+```
+
+WRFv3 and WRFv4 are available to load as stand alone modules via:
+
+`module load WRF/4.2` 
+
+this will allow the user to run prebuilt `wrf.exe` `real.exe` and preprocessing tools etc. Copies of WRF source code, run directories and WPS files can be found in `/nobackup/WRF/`
+
+a number of tools can also by loaded
+
+* wrfconda - an anaconda environment containing python libraries such as wrf-python 
+* ncl
+* ncview
+* nco
+* cdo
+
 
 ## License
 
@@ -36,4 +62,4 @@ C. Dearden, CEMAC
 
 ## Acknowledgements
 
-These guides were produced by C. Dearden, CEMAC
+Original guides produced by C. Dearden, CEMAC
