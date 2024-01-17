@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# shamelessly ripped from Stephan Henne, stephan.henne@empa.ch
+# based Stephan Henne, stephan.henne@empa.ch script
 
 if [ $# -ne 4 ]
 then
@@ -13,7 +13,7 @@ month=$2
 day=$3
 hour=$4
 
-dataDir=/nobackup/username/wrf3.7.1_data/initial_boundary_meteo/
+dataDir=/nobackup/$USER/wrf_data/initial_boundary_meteo/
 
 mkdir -p $dataDir
 cd $dataDir
@@ -29,7 +29,7 @@ do
 
   outFile=GF${fcstYear}${fcstMonth}${fcstDay}${fcstHour}
 
-  wget -o wget.log -O - "http://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.${year}${month}${day}${hour}/gfs.t${hour}z.pgrb2.0p25.f${addhour}" > ${outFile}_tmp
+  wget -o wget.log -O - "http://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.${year}${month}${day}/${hour}/atmos/gfs.t${hour}z.pgrb2.0p25.f${addhour}" > ${outFile}_tmp
 
   filesize=$(/usr/bin/stat -c "%s" ${outFile}_tmp)
 
