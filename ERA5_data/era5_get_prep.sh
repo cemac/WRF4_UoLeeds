@@ -107,7 +107,7 @@ echo 'downloading model level data'
 echo 'moving data to year archive in '${DATADIR}
 # Check folder structure exists
 if [ ! -e ${DATADIR} ] ; then
-  mkdir ${DATADIR}
+  mkdir -p ${DATADIR}
 fi
 if [ ! -e ${DATADIR}/$YY1/$MM1 ] ; then
   mkdir -p ${DATADIR}/$YY1/$MM1
