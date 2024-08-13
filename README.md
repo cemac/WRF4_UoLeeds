@@ -7,7 +7,7 @@
 
 # WRF4_UoLeeds
 
- [![GitHub release](https://img.shields.io/github/release/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds/releases) [![GitHub top language](https://img.shields.io/github/languages/top/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds) [![GitHub issues](https://img.shields.io/github/issues/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds/commits/master) [![GitHub All Releases](https://img.shields.io/github/downloads/cemac/WRF4_UoLeeds/total.svg)](https://github.com/cemac/WRF4_UoLeeds/releases) ![GitHub](https://img.shields.io/github/license/cemac/WRF4_UoLeeds.svg)
+ [![GitHub release](https://img.shields.io/github/release/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds/releases) [![GitHub top language](https://img.shields.io/github/languages/top/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds) [![GitHub issues](https://img.shields.io/github/issues/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/cemac/WRF4_UoLeeds.svg)](https://github.com/cemac/WRF4_UoLeeds/commits/master) [![GitHub All Releases](https://img.shields.io/github/downloads/cemac/WRF4_UoLeeds/total.svg)](https://github.com/cemac/WRF4_UoLeeds/releases) ![GitHub](https://img.shields.io/github/license/cemac/WRF4_UoLeeds.svg) [![DOI](https://zenodo.org/badge/151231657.svg)](https://zenodo.org/doi/10.5281/zenodo.6594623)
 
 
 ### Guidance on using WRF4 on the UoLeeds ARC3 & ARC4 system
