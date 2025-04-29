@@ -27,7 +27,7 @@ do
   fcstDay=$(date -u --date="${year}-${month}-${day} ${hour}:00:00 UTC +${addhour} hours" "+%d")
   fcstHour=$(date -u --date="${year}-${month}-${day} ${hour}:00:00 UTC +${addhour} hours" "+%H")
 
-  outFile=GF${fcstYear}${fcstMonth}${fcstDay}${fcstHour}
+  outFile=gfs${fcstYear}${fcstMonth}${fcstDay}${fcstHour}
 
   wget -o wget.log -O - "http://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.${year}${month}${day}/${hour}/atmos/gfs.t${hour}z.pgrb2.0p25.f${addhour}" > ${outFile}_tmp
 
